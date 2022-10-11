@@ -3,11 +3,11 @@ import { Hervivoro } from "./Vegetariano";
 import { Omnivoro } from "./Omnivoro";
 import { Mamifero } from "./Mamifero"
 
-let perro : Omnivoro = new Omnivoro ("Firulais");
+let cerdo : Omnivoro = new Omnivoro ("Feif");
 let tigre : Carnivoro = new Carnivoro ("Felix");
 let conejo : Hervivoro = new Hervivoro ("Finn");
 
-let grupoZoo : Mamifero[] = [perro, tigre, conejo];
+let grupoZoo : Mamifero[] = [cerdo, tigre, conejo];
 todosComen(grupoZoo);
 todosCaminan(grupoZoo);
 
