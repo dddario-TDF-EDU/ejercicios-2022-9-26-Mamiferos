@@ -1,0 +1,27 @@
+import { Carnivoro } from "./Carnivoro";
+import { Hervivoro } from "./Vegetariano";
+import { Omnivoro } from "./Omnivoro";
+import { Mamifero } from "./Mamifero"
+
+let perro : Omnivoro = new Omnivoro ("Firulais");
+let tigre : Carnivoro = new Carnivoro ("Felix");
+let conejo : Hervivoro = new Hervivoro ("Finn");
+
+let grupoZoo : Mamifero[] = [perro, tigre, conejo];
+todosComen(grupoZoo);
+todosCaminan(grupoZoo);
+
+
+function todosComen(paramArray): void {
+    for(let i = 0; i < paramArray.length; i++) {
+        console.log(paramArray[i].getName());
+        paramArray[i].comer();
+    }
+}
+
+function todosCaminan(paramArray): void {
+    for(let i = 0; i < paramArray.length; i++) {
+        console.log(paramArray[i].getName());
+        paramArray[i].moverse(i);
+    }
+}
