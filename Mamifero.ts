@@ -26,5 +26,4 @@ export class Mamifero implements SerVivo {
     public moverse(paramPasos: number): void {
         console.log("se desplaza " + paramPasos + " pasos");
     }
-
 }
